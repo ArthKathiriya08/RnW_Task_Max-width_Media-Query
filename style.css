@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +10,7 @@ body {
     background-color: #EBCEBF;
 }
 
-/* --- nav start ---  */
-
-/* --  */
+/* Navigation Styles */
 #menu-toggle {
     display: none;
 }
@@ -30,7 +29,7 @@ nav .mobile {
     background-color: #f5e1d8;
 }
 
-/* pure CSS hack */
+/* Mobile Menu Logic */
 #menu-toggle:checked~.mobile {
     top: 0;
 }
@@ -76,8 +75,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0;
-    z-index: 9999;
+    top: 0; /* Keeps navigation at the top when scrolling */
+    z-index: 9999; /* Ensures nav stays above all other content */
 }
 
 
@@ -106,13 +105,12 @@ nav {
 
 /* --- nav end ---  */
 
-/* --- hero start ---  */
-
+/* Hero Section Styles */
 .hero {
     height: 100vh;
     width: 100%;
-    transform: scaleX(-1);
-    clip-path: url(#wave);
+    transform: scaleX(-1); /* Horizontally flips the hero content */
+    clip-path: url(#wave); /* Applies the SVG wave shape as a mask */
 
     /* top: -20px; */
     /* position: relative; */
@@ -161,6 +159,7 @@ nav {
 
 /* --- hero end ---  */
 
+/* Menu & Cards Styles */
 .menu {
     width: 100%;
     padding: 4%;
@@ -201,14 +200,13 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows cards to move to next line on smaller screens */
 }
 
 .m-box-1-card .card {
     height: 250px;
     width: 300px;
-    border-radius: 30px;
-
+    
     background-position: center;
     background-size: cover;
 }
@@ -338,6 +336,7 @@ nav {
 
 }
 
+/* Footer Styles */
 footer {
     color: white;
     width: 100%;
@@ -373,6 +372,7 @@ footer {
 }
 
 
+/* Responsive Design - Tablets and Mobile */
 @media (max-width: 768px) {
 
     nav {
@@ -418,6 +418,7 @@ footer {
     }
 }
 
+/* Responsive Design - Small Mobile Devices */
 @media (max-width: 330px) {
     .foo-box-1 {
         flex-direction: column;
