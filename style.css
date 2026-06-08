@@ -206,6 +206,7 @@ nav {
 .m-box-1-card .card {
     height: 250px;
     width: 300px;
+    border-radius: 30px;
     
     background-position: center;
     background-size: cover;
